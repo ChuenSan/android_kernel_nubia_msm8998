@@ -31,7 +31,6 @@
 #include <linux/migrate.h>
 #include <linux/task_work.h>
 #include <linux/module.h>
-#include <linux/sched/sched.h>  // 添加此行，确保SCHED_WARN_ON声明可用
 
 #include "sched.h"
 #include <trace/events/sched.h>
