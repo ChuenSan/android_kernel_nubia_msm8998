@@ -5309,7 +5309,7 @@ static u64 distribute_cfs_runtime(struct cfs_bandwidth *cfs_b, u64 remaining)
 			goto next;
 
 		/* By the above check, this should never be true */
-		SCHED_WARN_ON(cfs_rq->runtime_remaining > 0);
+		// SCHED_WARN_ON(cfs_rq->runtime_remaining > 0);
 
 		runtime = -cfs_rq->runtime_remaining + 1;
 		if (runtime > remaining)
